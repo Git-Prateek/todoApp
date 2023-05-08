@@ -20,7 +20,7 @@ const UserProfile = (props) => {
         <div className="header">
             <div className="subHeader">
                 <h1>{props.user}</h1>
-                {props.showTodo ?
+                {!props.showTodo ?
                     <button className="primary todoButton" onClick={handleToggleTodo}>
                         Show  Todo
                     </button>
